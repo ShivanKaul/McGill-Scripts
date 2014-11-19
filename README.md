@@ -1,5 +1,6 @@
 Uses Mechanize to login to MyCourses.  
 
 Usage:  
-===========
-python <script-name> <your-username> <your-password>
+-----------
+Pass in your username and password as arguments to the script.
+<pre><code>python login.py [your-username] [your-password] </code></pre>
