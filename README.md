@@ -1,3 +1,5 @@
+MyCoursesLoginScript (yay for unambiguous naming)  
+-----------
 Uses Mechanize to login to MyCourses.  
 
 Usage:  
