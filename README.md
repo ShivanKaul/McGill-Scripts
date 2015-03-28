@@ -10,5 +10,5 @@ To get your transcript, type:
 
  Requirements:
 ------
-Python  
-Mechanize 
+Python 2.7+  
+Mechanize (To get mechanize, use your package manager; if you're on Debian/Ubuntu, just type `sudo apt-get install python-mechanize`. Else, you could use pip to get mechanize thusly: `pip install mechanize`. To get pip, use easy_install: `easy_install pip`. To get easy_install, use your package manager {or `sudo apt-get install python-setuptools python-dev build-essential` on Debian})
