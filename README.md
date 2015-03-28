@@ -1,6 +1,6 @@
-MyCoursesLoginScript (yay for unambiguous naming)  
+Minerva Transcript Fetcher, and MyCourses CLI logon  
 -----------
-Uses Mechanize to login to MyCourses.  
+Uses Mechanize to fetch transcript from Minerva, and authenticate from the CLI for MyCourses.  
 
 Usage:  
 -----------
