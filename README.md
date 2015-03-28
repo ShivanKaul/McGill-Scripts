@@ -4,5 +4,6 @@ Uses Mechanize to login to MyCourses.
 
 Usage:  
 -----------
-Pass in your username and password as arguments to the script.
-<pre><code>python login.py [your-username] [your-password] </code></pre>
+To get your transcript, type:
+<pre><code>python login_minerva</code></pre>. You will be prompted for your McGill username and password. If you want to login into your MyCourses from the CLI, use this script:  
+<pre><code>python login_mycourses</code></pre>. However, not sure if it's working. Haven't gotten time to test. Submit a pull request!
