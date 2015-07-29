@@ -1,4 +1,3 @@
-import cookielib
 import mechanize as mech
 import getpass
 import sys
@@ -12,11 +11,11 @@ def main():
 	# Browser
 	br = mech.Browser()
 	# Cookie jar
-	cj = cookielib.LWPCookieJar()
+	cj = mech.LWPCookieJar()
 	br.set_cookiejar(cj)
 
 	# Define URLs
-	URL = "https://horizon.mcgill.ca/pban1/"
+	URL = "https://horizon.mcgill.ca/pban1/" 
 	URL_transcript = "bzsktran.P_Display_Form?user_type=S&tran_type=V"
 	URL_login = "twbkwbis.P_WWWLogin"
 
@@ -35,7 +34,7 @@ def main():
 
 	# Get form on page and fill
 	br.select_form(nr=0)
-	br.form["sid"] = USERNAME 
+	br.form["sid"] = USERNAME
 	br.form["PIN"] = PASSWORD
 
 	# Submit login credentials
