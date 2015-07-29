@@ -41,11 +41,11 @@ def main():
 	response = br.submit()
 
 	if 'Failure' in response.read():
-		print "Invalid McGill username/password. Your mother would be ashamed of you."
+		print("Invalid McGill username/password. Your mother would be ashamed of you.")
 		exit()
 
 
-	print "Fetching transcript.html... By the way, you should be studying right now."
+	print("Fetching transcript.html... By the way, you should be studying right now.")
 
 	# Download transcript
 	response2 = br.open(URL + URL_transcript)
@@ -62,7 +62,7 @@ def main():
 	transcript.write(tr)
 	transcript.close()
 
-	print "Done. Have a nice day."
+	print("Done. Have a nice day.")
 
 if __name__ == "__main__":
 	main()
