@@ -8,6 +8,7 @@ def main():
 
 	### NOTE: I was trying to use Mechanize to get MyCourses stuff, which is why I had to add all the headers and bother with cookies et al. I probably don't need all this for Minerva ###
 
+	NAME = USERNAME.rsplit('@', 1)[0].title().replace(".", "")
 	# Browser
 	br = mech.Browser()
 	# Cookie jar
@@ -58,7 +59,7 @@ def main():
 	tr = tr[:tr.index('<TABLE  CLASS="plaintable')]
 
 	# Save transcript to disk
-	transcript = open("transcript.html", "w")
+	transcript = open(NAME + "-UnofficialTranscript.html", "w")
 	transcript.write(tr)
 	transcript.close()
 
